@@ -1,0 +1,4 @@
+.art-container {
+  columns: 20rem;
+  column-gap: 1rem;
+}

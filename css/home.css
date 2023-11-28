@@ -1,154 +1,154 @@
 .home {
-    display: grid;
-    grid-template-rows: 50%, auto;
-    justify-items: center;
-  }
-  
-  .heading-wrapper {
-    text-align: center;
-    width: 40%;
-    margin-top: 5rem;
-  }
-  
-  .heading-wrapper h1 {
-    line-height: 5rem;
-  }
-  
-  .heading-wrapper h2 {
-    word-spacing: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .heading-wrapper p {
-    margin-top: 2rem;
-  }
-  
-  .home a button {
-    padding: 0.5rem;
-  
-    border: var(--main-color) 5px solid;  
-    border-radius: 50%;
-    background-color: transparent;
-  
-    transition: 0.15s ease-in-out;
-  }
-  
-  .home a button i {
-    color: var(--main-color);
-    font-size: 3rem;
-    margin: 0.5rem;
-    transition: 0.15s ease-in-out;
-  
-  }
-  
-  .home a button:hover {
-    background-color: var(--main-color);
-  }
-  
-  .home a button:hover i {
-    color: var(--first-bg-color);
-  }
-  
-  .home a button:active {
-    padding: 1rem;
-  }
-  
-  .recently-added .text {
-    text-align: center;
-  }
-  
-  .recently-added-container img {
-    height: 100%;
-  }
-  
-  .recently-added-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    height: 70%;
-    margin: 2rem 0rem;
-  }
-  
-  .recently-added-container .recently-added-box {
-    position: relative;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 2rem var(--bg-color);
-    overflow: hidden;
-  
-  }
-  
-  .recently-added-box {
-    height: 100%;
-    width: 20vw;
-  
-    transition: 0.15s ease;
-  }
-  
-  .recently-added-box img {
-    width: 100%;
-    object-fit: cover;
-    transition: 0.5s ease;
-  }
-  
-  .recently-added-box:hover img {
-    transform: scale(1.05);
-    filter: blur(0.125rem);
-  }
-  
-  .recently-added-box .recently-added-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  
-    background: transparent;
-    /* background: linear-gradient(transparent, rgba(255, 255, 255, 0.2)); */
-    padding: 1rem;
-  
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-  
-    transform: translateY(200%);
-    transition: 0.5s ease;
-  }
-  
-  .recently-added-box:hover .recently-added-layer{
-    transform: translateY(0);
-  }
-  
-  .recently-added-layer button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    height: 3rem;
-    background: var(--main-color);
-    border-radius: 1.5rem;
-    transition: 0.5s ease;
-    color: var(--first-bg-color);
-    font-weight: 600;
-  }
-  
-  .recently-added-layer button:hover {
-    scale: 1.2;
-  }
-  
-  .recently-added-layer button:active {
-    scale: 0.9;
-  }
-  
-  .recently-added-layer button i {
-    font-size: 2rem;
-    color: var(--first-bg-color);
-  }
-  
-  .button-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: grid;
+  grid-template-rows: 50%, auto;
+  justify-items: center;
+}
+
+.heading-wrapper {
+  text-align: center;
+  width: 40%;
+  margin-top: 5rem;
+}
+
+.heading-wrapper h1 {
+  line-height: 5rem;
+}
+
+.heading-wrapper h2 {
+  word-spacing: 1rem;
+  margin-top: 1rem;
+}
+
+.heading-wrapper p {
+  margin-top: 2rem;
+}
+
+.home a button {
+  padding: 0.5rem;
+
+  border: var(--main-color) 5px solid;
+  border-radius: 50%;
+  background-color: transparent;
+
+  transition: 0.15s ease-in-out;
+}
+
+.home a button i {
+  color: var(--main-color);
+  font-size: 3rem;
+  margin: 0.5rem;
+  transition: 0.15s ease-in-out;
+
+}
+
+.home a button:hover {
+  background-color: var(--main-color);
+}
+
+.home a button:hover i {
+  color: var(--first-bg-color);
+}
+
+.home a button:active {
+  padding: 1rem;
+}
+
+.recently-added .text {
+  text-align: center;
+}
+
+.recently-added-container img {
+  height: 100%;
+}
+
+.recently-added-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  height: 70%;
+  margin: 2rem 0rem;
+}
+
+.recently-added-container .recently-added-box {
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem var(--bg-color);
+  overflow: hidden;
+
+}
+
+.recently-added-box {
+  height: 100%;
+  width: 20vw;
+
+  transition: 0.15s ease;
+}
+
+.recently-added-box img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.recently-added-box:hover img {
+  transform: scale(1.05);
+  filter: blur(0.125rem);
+}
+
+.recently-added-box .recently-added-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  /* background: linear-gradient(transparent, rgba(255, 255, 255, 0.2)); */
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+
+  transform: translateY(200%);
+  transition: 0.5s ease;
+}
+
+.recently-added-box:hover .recently-added-layer {
+  transform: translateY(0);
+}
+
+.recently-added-layer button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 3rem;
+  background: var(--main-color);
+  border-radius: 1.5rem;
+  transition: 0.5s ease;
+  color: var(--first-bg-color);
+  font-weight: 600;
+}
+
+.recently-added-layer button:hover {
+  scale: 1.2;
+}
+
+.recently-added-layer button:active {
+  scale: 0.9;
+}
+
+.recently-added-layer button i {
+  font-size: 2rem;
+  color: var(--first-bg-color);
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
