@@ -1,0 +1,95 @@
+section {
+    text-align: center;
+}
+
+.art-container img {
+    width: 100%;
+}
+
+.art-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    gap: 1rem;
+    margin: 2rem 0rem;
+}
+
+.art-colum {
+    display: grid;
+    width: 100%;
+}
+
+.art-container .art-box {
+    position: relative;
+
+    box-shadow: 0 0 2rem var(--bg-color);
+    overflow: hidden;
+}
+
+.art-box {
+    height: fit-content;
+    width: 100%;
+    transition: 0.15s ease;
+    margin-bottom: 1.5rem;
+}
+
+
+.art-box img {
+    
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+    border-radius: 0.5rem;
+}
+
+.art-box:hover img {
+    filter: blur(0.0625rem);
+}
+
+.art-box .art-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: transparent;
+    /* background: linear-gradient(transparent, rgba(255, 255, 255, 0.2)); */
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+
+    transform: translateY(200%);
+    transition: 0.5s ease;
+}
+
+.art-box:hover .art-layer {
+    transform: translateY(0);
+}
+
+.art-layer button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 3rem;
+    background: var(--main-color);
+    border-radius: 1.5rem;
+    transition: 0.5s ease;
+    color: var(--first-bg-color);
+    font-weight: 600;
+}
+
+.art-layer button:hover {
+    scale: 1.2;
+}
+
+.art-layer button:active {
+    scale: 0.9;
+}
+
+.art-layer button i {
+    font-size: 2rem;
+    color: var(--first-bg-color);
+}
