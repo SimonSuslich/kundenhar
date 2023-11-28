@@ -1,5 +1,9 @@
-.art-for-sale {
-    text-align: center;
+.text-wrapper {
+    margin-bottom: 2rem;
+}
+
+.text-wrapper h1 {
+    margin-bottom: 1rem;
 }
 
 
@@ -30,11 +34,12 @@
     width: 100%;
     object-fit: cover;
     transition: 0.5s ease;
+    border: 0.25rem var(--second-bg-color) solid;
     border-radius: 0.5rem;
 }
 
 .art-box:hover img {
-    filter: blur(0.0625rem);
+    border-color: var(--main-color);
 }
 
 .art-box .art-layer {
@@ -44,7 +49,7 @@
     width: 100%;
     height: 100%;
 
-    background: transparent;
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.5));
     padding: 1rem;
 
     display: flex;
