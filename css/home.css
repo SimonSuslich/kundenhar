@@ -1,3 +1,11 @@
+main {
+  background-image: url(/img/background-image-landing-page.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .home {
   display: grid;
   grid-template-rows: 50%, auto;
@@ -62,11 +70,10 @@
 }
 
 .recently-added-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2.5rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
   height: 70%;
   margin: 2rem 0rem;
 }
@@ -76,12 +83,13 @@
   border-radius: 0.5rem;
   box-shadow: 0 0 2rem var(--bg-color);
   overflow: hidden;
-
+  display: flex;
 }
 
 .recently-added-box {
-  height: 100%;
-  width: 20vw;
+  height: 60vh;
+  width: 22vw;
+
 
   transition: 0.15s ease;
 }
@@ -94,7 +102,6 @@
 
 .recently-added-box:hover img {
   transform: scale(1.05);
-  filter: blur(0.125rem);
 }
 
 .recently-added-box .recently-added-layer {
@@ -104,8 +111,8 @@
   width: 100%;
   height: 100%;
 
-  background: transparent;
-  /* background: linear-gradient(transparent, rgba(255, 255, 255, 0.2)); */
+  /* background: transparent; */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
   padding: 1rem;
 
   display: flex;

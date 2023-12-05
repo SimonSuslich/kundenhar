@@ -1,0 +1,56 @@
+.about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1rem;
+    text-align: center;
+
+    background-color: var(--third-bg-color);
+}
+
+.half {
+    padding-top: 10%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 20%;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'img-box1 text-box1'
+    'text-box2 img-box2'
+    ;
+}
+
+.img-box img {
+    width: 100px;
+}
+
+.text-box1 {
+    grid-area: 'text-box1';
+}
+
+.text-box2 {
+    grid-area: 'text-box2';
+}
+
+.img-box1 {
+    grid-area: 'img-box1';
+}
+
+.img-box2 {
+    grid-area: 'img-box2';
+}
+
+
+
+.text-box h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+}
+
+.text-box p {
+    text-align: start;
+}
