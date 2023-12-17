@@ -214,17 +214,19 @@ p {
 /* Footer */
 .footer-section {
   background: linear-gradient(var(--bg-color), black);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
 }
 
 
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.5rem;
+  column-gap: 4rem;
   padding: 2rem;
+  grid-template-columns: 50% 25% 25%;
+}
+
+.footer-container .text {
+  width: 90%;
 }
 
 .footer-column {
@@ -240,6 +242,11 @@ p {
   position: relative;
   font-size: 2rem;
   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.footer-column p {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
 }
 
 .footer-column h4::before {
@@ -267,7 +274,7 @@ p {
   color: var(--third-bg-color);
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   transition: 0.5s;
   font-family: 'Poppins', sans-serif;
 }
@@ -303,9 +310,41 @@ p {
 
 .copy-right {
   display: flex;
+  flex-direction: column;
   padding: 2rem 0 0 0;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-weight: 400;
   border-top: var(--second-bg-color) 0.2rem solid;
+}
+
+
+.copy-right a button {
+  padding: 0.5rem;
+
+  border: var(--main-color) 5px solid;
+  border-radius: 50%;
+  background-color: transparent;
+
+  transition: 0.15s ease-in-out;
+}
+
+.copy-right a button i {
+  color: var(--main-color);
+  font-size: 4rem;
+  margin: 0.5rem;
+  transition: 0.15s ease-in-out;
+
+}
+
+.copy-right a button:hover {
+  background-color: var(--main-color);
+}
+
+.copy-right a button:hover i {
+  color: var(--first-bg-color);
+}
+
+.copy-right a button:active {
+  padding: 1rem;
 }
