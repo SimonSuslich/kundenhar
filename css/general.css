@@ -322,7 +322,7 @@ p {
 }
 
 
-.copy-right a button {
+.copy-right a {
   padding: 0.5rem;
 
   border: var(--main-color) 0.25rem solid;
@@ -332,7 +332,7 @@ p {
   transition: 0.15s ease-in-out;
 }
 
-.copy-right a button i {
+.copy-right a i {
   color: var(--main-color);
   font-size: 2rem;
   margin: 0.5rem;
@@ -340,14 +340,14 @@ p {
 
 }
 
-.copy-right a button:hover {
+.copy-right a:hover {
   background-color: var(--main-color);
 }
 
-.copy-right a button:hover i {
+.copy-right a:hover i {
   color: var(--first-bg-color);
 }
 
-.copy-right a button:active {
+.copy-right a:active {
   padding: 1rem;
 }

@@ -8,7 +8,7 @@ main {
 
 .home {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 70% min-content;
   justify-items: center;
 }
 
@@ -31,7 +31,7 @@ main {
   margin-top: 2rem;
 }
 
-.home a button {
+.home a {
   padding: 0.5rem;
 
   border: var(--main-color) 5px solid;
@@ -41,7 +41,7 @@ main {
   transition: 0.15s ease-in-out;
 }
 
-.home a button i {
+.home a i {
   color: var(--main-color);
   font-size: 3rem;
   margin: 0.5rem;
@@ -49,15 +49,15 @@ main {
 
 }
 
-.home a button:hover {
+.home a:hover {
   background-color: var(--main-color);
 }
 
-.home a button:hover i {
+.home a:hover i {
   color: var(--first-bg-color);
 }
 
-.home a button:active {
+.home a:active {
   padding: 1rem;
 }
 
