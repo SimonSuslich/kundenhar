@@ -126,6 +126,7 @@
     transition: 0.5s ease;
     color: var(--first-bg-color);
     font-weight: 600;
+    font-size: 0.6rem;
 }
 
 .art-layer button:hover {
@@ -134,10 +135,6 @@
 
 .art-layer button:active {
     transform: scale(0.95);
-}
-
-button {
-    font-size: 0.75rem;
 }
 
 .art-layer button i {
