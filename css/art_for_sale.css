@@ -56,7 +56,7 @@
 }
 
 .art-for-sale {
-    background-color: var(--second-bg-color);
+    background: linear-gradient(to bottom, var(--second-bg-color), var(--first-bg-color));
 }
 
 .art-container {
@@ -82,7 +82,6 @@
 
 
 .art-box img {
-
     width: 100%;
     object-fit: cover;
     transition: 0.5s ease;
@@ -130,11 +129,11 @@
 }
 
 .art-layer button:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .art-layer button:active {
-    scale: 0.9;
+    transform: scale(0.95);
 }
 
 button {

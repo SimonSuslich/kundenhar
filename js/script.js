@@ -5,7 +5,6 @@ let accountButtons = document.querySelectorAll('.account-buttons');
 accountButtons.forEach(function (button) {
   button.addEventListener('click', function () {
     alert("In order to use this feature, you should have an account.")
-    // Add your code here to execute when a button is clicked
   });
 });
 
@@ -24,3 +23,12 @@ likeButton.forEach(function (button) {
     }
   })
 });
+
+
+ScrollReveal({
+  distance: '40px',
+  duration: 1500,
+  delay: 500
+});
+
+ScrollReveal().reveal('.art-box', { origin: 'bottom' });

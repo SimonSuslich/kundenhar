@@ -8,7 +8,7 @@ main {
 
 .home {
   display: grid;
-  grid-template-rows: 50%, auto;
+  grid-template-rows: auto auto;
   justify-items: center;
 }
 
@@ -36,7 +36,7 @@ main {
 
   border: var(--main-color) 5px solid;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: var(--first-bg-color);
 
   transition: 0.15s ease-in-out;
 }
@@ -145,11 +145,11 @@ main {
 }
 
 .recently-added-layer button:hover {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .recently-added-layer button:active {
-  scale: 0.9;
+  transform: scale(0.9);
 }
 
 .recently-added-layer button i {

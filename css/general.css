@@ -3,9 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* font-family: 'Playfair Display', serif; */
-
-
+/* GENERELL INFO */
 
 * {
   margin: 0;
@@ -48,7 +46,6 @@ span.main-color {
 section {
   min-height: 100vh;
   padding: 7rem 2rem 3rem;
-  /* background: var(--third-bg-color); */
 }
 
 .btn {
@@ -62,12 +59,14 @@ section {
 }
 
 .btn:hover {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 .btn:active {
-  scale: 0.95;
+  transform: scale(0.95);
 }
+
+/* NAV DESIGN */
 
 nav {
   height: 6rem;
@@ -91,6 +90,10 @@ nav {
   font-weight: 600;
   cursor: default;
   color: var(--text-color);
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .menu {
@@ -160,7 +163,7 @@ nav {
 }
 
 .log-in-sign-up .icons button {
-  padding: none;
+  padding: 0;
   border: none;
 }
 
@@ -180,6 +183,8 @@ nav {
 .log-in-sign-up button {
   cursor: pointer;
 }
+
+/* GENERELL INRO */
 
 h1,
 h2,
@@ -210,11 +215,11 @@ p {
 
 /* FOOTER DESIGN */
 
-
-/* Footer */
 .footer-section {
   background: linear-gradient(var(--bg-color), black);
   display: grid;
+  grid-template-rows: 80% 20%;
+  padding-bottom: 1rem;
 }
 
 
@@ -233,14 +238,12 @@ p {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  font-size: 1.5rem;
 }
 
-.footer-column h4 {
+.footer-column h3 {
   padding-bottom: 2px;
   margin-bottom: 1.5rem;
   position: relative;
-  font-size: 2rem;
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -249,7 +252,7 @@ p {
   margin-bottom: 2rem;
 }
 
-.footer-column h4::before {
+.footer-column h3::before {
   content: "";
   display: block;
   position: absolute;
@@ -261,7 +264,7 @@ p {
   transition: width 0.5s ease;
 }
 
-.footer-column:hover h4::before {
+.footer-column:hover h3::before {
   width: 60px;
 }
 
@@ -311,8 +314,8 @@ p {
 .copy-right {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0 0 0;
-  justify-content: space-around;
+  padding: 1rem 0 0 0;
+  justify-content: space-between;
   align-items: center;
   font-weight: 400;
   border-top: var(--second-bg-color) 0.2rem solid;
@@ -322,7 +325,7 @@ p {
 .copy-right a button {
   padding: 0.5rem;
 
-  border: var(--main-color) 5px solid;
+  border: var(--main-color) 0.25rem solid;
   border-radius: 50%;
   background-color: transparent;
 
@@ -331,7 +334,7 @@ p {
 
 .copy-right a button i {
   color: var(--main-color);
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0.5rem;
   transition: 0.15s ease-in-out;
 
