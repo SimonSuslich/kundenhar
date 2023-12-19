@@ -34,7 +34,7 @@
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
     place-items: center;
-    width: 70vw;
+    width: 60vw;
 }
 
 .content-box img {
@@ -49,7 +49,6 @@
     align-items: center;
     width: 50%;
 }
-
 
 .text-box h3 {
     font-family: 'Montserrat Alternates', sans-serif;

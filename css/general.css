@@ -212,7 +212,6 @@ p {
   font-size: 1rem;
 }
 
-
 /* FOOTER DESIGN */
 
 .footer-section {
@@ -293,7 +292,6 @@ p {
   justify-content: start;
 }
 
-
 .footer-social-media a i {
   color: var(--main-color);
   border: var(--main-color) 0.2rem solid;
@@ -310,7 +308,6 @@ p {
   color: var(--first-bg-color);
 }
 
-
 .copy-right {
   display: flex;
   flex-direction: column;
@@ -320,7 +317,6 @@ p {
   font-weight: 400;
   border-top: var(--second-bg-color) 0.2rem solid;
 }
-
 
 .copy-right a {
   padding: 0.5rem;
